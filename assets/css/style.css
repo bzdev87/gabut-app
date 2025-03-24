@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Mencegah scroll horizontal */
+  box-sizing: border-box; /* Menjaga ukuran elemen tetap konsisten */
 }
 
 body {
@@ -13,10 +14,11 @@ body {
   background: linear-gradient(135deg, #f0f8ff, #e0bbff);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Pastikan konten mulai dari atas */
   align-items: center;
   min-height: 100vh;
   overflow-y: auto; /* Memungkinkan scroll vertikal */
+  padding: 20px; /* Menambahkan sedikit padding untuk memberikan ruang */
 }
 
 .container {
